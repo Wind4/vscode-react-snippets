@@ -1,0 +1,84 @@
+{
+    "importModule": {
+        "prefix": "imp",
+        "body": "import $1 from '${2:module}';$0",
+        "description": "Imports entire module statement in ES6 syntax."
+    },
+    "importDestructing": {
+        "prefix": "imd",
+        "body": "import { $1 } from '${2:module}';$0",
+        "description": "Imports only a portion of the module in ES6 syntax"
+    },
+    "importEverything": {
+        "prefix": "ime",
+        "body": "import * as ${1:alias} from '${2:module}';$0",
+        "description": "Imports everything as alias from the module in ES6 syntax"
+    },
+    "importAs": {
+        "prefix": "ima",
+        "body": "import { ${1:originalName} as ${2:alias} } from '${3:module}';$0",
+        "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
+    },
+    "consoleClear": {
+        "prefix": "clear",
+        "body": "console.clear();${0}",
+        "description": "Clears the console"
+    },
+    "consoleDir": {
+        "prefix": "dir",
+        "body": "console.dir(${1:object});${0}",
+        "description": "Prints a JavaScript representation of the specified object"
+    },
+    "consoleError": {
+        "prefix": "error",
+        "body": "console.error(${1:object});${0}",
+        "description": "Displays a message in the console and also includes a stack trace from where the method was called"
+    },
+    "consoleLog": {
+        "prefix": "log",
+        "body": "console.log(${1:object});${0}",
+        "description": "Displays a message in the console"
+    },
+    "consoleTrace": {
+        "prefix": "trace",
+        "body": "console.trace(${1:object});${0}",
+        "description": "Prints a stack trace from the point where the method was called"
+    },
+    "consoleWarn": {
+        "prefix": "warn",
+        "body": "console.warn(${1:object});${0}",
+        "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
+    },
+    "defineClass": {
+        "prefix": "class",
+        "body": [
+            "class ${1} {",
+            "\t${2}",
+            "}"
+        ],
+        "description": "Create a class without constructor"
+    },
+    "defineFunction": {
+        "prefix": "func",
+        "body": [
+            "function ${1:name}(${2}) {",
+            "\t${3}",
+            "}"
+        ],
+        "description": "Create a function"
+    },
+    "defineArrowFunction": {
+        "prefix": "fn",
+        "body": "(${1}) => {${2}}${0}",
+        "description": "Create a arrow function"
+    },
+    "definePromise": {
+        "prefix": "promise",
+        "body": [
+            "new Promise((resolve, reject) => {",
+            "\t${1:resolve();}",
+            "})${0}"
+        ],
+        "description": "Create a promise segment"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "reactComponent": {
+        "prefix": "rc",
+        "body": [
+            "import React, { PropTypes } from 'react';",
+            "",
+            "class ${1:MyComponent} extends React.Component {",
+            "\tstatic propTypes = {}",
+            "\tstatic defaultProps = {}",
+            "",
+            "\trender() {",
+            "\t\treturn (${2:<div>MyComponent</div>});",
+            "\t}",
+            "}",
+            "",
+            "export default ${1:MyComponent};"
+        ]
+    },
+    "reactPureComponent": {
+        "prefix": "rpurec",
+        "body": [
+            "import React, { PropTypes } from 'react';",
+            "",
+            "class ${1:MyComponent} extends React.PureComponent {",
+            "\tstatic propTypes = {}",
+            "\tstatic defaultProps = {}",
+            "",
+            "\trender() {",
+            "\t\treturn (${2:<div>MyComponent</div>});",
+            "\t}",
+            "}",
+            "",
+            "export default ${1:MyComponent};"
+        ]
+    },
+    "reactStatelessFunctionalComponent": {
+        "prefix": "rfunc",
+        "body": [
+            "import React, { PropTypes } from 'react';",
+            "",
+            "function ${1:MyComponent}() {",
+            "\treturn (${2:<div>MyComponent</div>});",
+            "}",
+            "",
+            "${1:MyComponent}.propTypes = {};",
+            "${1:MyComponent}.defaultProps = {};",
+            "",
+            "export default ${1:MyComponent};"
+        ]
+    },
+    "reactConstructor": {
+        "prefix": "ctor",
+        "body": [
+            "constructor(props) {",
+            "\tsuper(props);",
+            "\t${1}",
+            "}"
+        ]
+    },
+    "reactPropTypeClassname": {
+        "prefix": "ptclass",
+        "body": "className: PropTypes.string,${0}"
+    },
+    "reactPropTypeStyle": {
+        "prefix": "ptstyle",
+        "body": "style: PropTypes.object,${0}"
+    },
+    "reactPropTypeChildren": {
+        "prefix": "ptchild",
+        "body": [
+            "children: PropTypes.oneOfType([",
+            "\tPropTypes.arrayOf(PropTypes.node),",
+            "\tPropTypes.node,",
+            "]),${0}"
+        ]
+    }
+}
