@@ -39,6 +39,11 @@
         "body": "console.log(${1:object});${0}",
         "description": "Displays a message in the console"
     },
+    "consoleInfo": {
+        "prefix": "info",
+        "body": "console.info(${1:object});${0}",
+        "description": "Displays a message in the console like console.log()"
+    },
     "consoleTrace": {
         "prefix": "trace",
         "body": "console.trace(${1:object});${0}",
