@@ -1,6 +1,6 @@
 {
   "name": "vscode-react-snippets",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "VSCode React snippets",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,6 @@
     "url": "https://github.com/Wind4/vscode-react-snippets/issues"
   },
   "homepage": "https://github.com/Wind4/vscode-react-snippets#readme",
-
   "displayName": "React Snippets",
   "publisher": "Wind4",
   "engines": {
