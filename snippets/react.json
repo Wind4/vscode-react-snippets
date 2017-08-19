@@ -3,7 +3,7 @@
         "prefix": "rc",
         "body": [
             "import React from 'react';",
-            "import PropTypes from 'prop-types'",
+            "import PropTypes from 'prop-types';",
             "",
             "class ${1:MyComponent} extends React.Component {",
             "\tstatic propTypes = {}",
@@ -30,7 +30,7 @@
         "prefix": "rcpure",
         "body": [
             "import React from 'react';",
-            "import PropTypes from 'prop-types'",
+            "import PropTypes from 'prop-types';",
             "",
             "class ${1:MyComponent} extends React.PureComponent {",
             "\tstatic propTypes = {}",
@@ -57,7 +57,7 @@
         "prefix": "rcfunc",
         "body": [
             "import React from 'react';",
-            "import PropTypes from 'prop-types'",
+            "import PropTypes from 'prop-types';",
             "",
             "function ${1:MyComponent}() {",
             "\treturn (",
