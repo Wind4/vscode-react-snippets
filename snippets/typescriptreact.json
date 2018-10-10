@@ -1,0 +1,135 @@
+{
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "interface I${1:App}Props {}",
+      "interface I${1:App}State {}",
+      "",
+      "class ${1:App} extends Component<I${1:App}Props, I${1:App}State> {",
+      "\tpublic static defaultProps = {};",
+      "",
+      "\tconstructor(props: I${1:App}Props) {",
+      "\t\tsuper(props);",
+      "",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\tpublic render() {",
+      "\t\treturn (",
+      "\t\t\t${2:<div>App</div>}",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:App};",
+      ""
+    ]
+  },
+  "React PureComponent": {
+    "prefix": "rcpure",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "",
+      "interface I${1:App}Props {}",
+      "interface I${1:App}State {}",
+      "",
+      "class ${1:App} extends PureComponent<I${1:App}Props, I${1:App}State> {",
+      "\tpublic static defaultProps = {};",
+      "",
+      "\tconstructor(props: I${1:App}Props) {",
+      "\t\tsuper(props);",
+      "",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\tpublic render() {",
+      "\t\treturn (",
+      "\t\t\t${2:<div>App</div>}",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:App};",
+      ""
+    ]
+  },
+  "React Stateless Functional Component": {
+    "prefix": "rcfunc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface I${1:App}Props {}",
+      "",
+      "const ${1:App}: React.SFC<I${1:App}Props> = props => {",
+      "  return <div>{props.children}</div>;",
+      "};",
+      "",
+      "${1:App}.defaultProps = {};",
+      "",
+      "export default ${1:App};",
+      ""
+    ]
+  },
+  "React Constructor": {
+    "prefix": "ctor",
+    "body": [
+      "constructor(props: I${1:App}Props) {",
+      "\tsuper(props);",
+      "",
+      "\tthis.state = {",
+      "\t\t${2}",
+      "\t};",
+      "}"
+    ]
+  },
+  "React Lifecycle DidMount": {
+    "prefix": "didMount",
+    "body": ["public componentDidMount() {", "\t${1}", "}"]
+  },
+  "React Lifecycle DerivedState": {
+    "prefix": "derivedState",
+    "body": [
+      "public static getDerivedStateFromProps(props: I${1:App}Props, state: I${1:App}State) {",
+      "\t${2}",
+      "}"
+    ]
+  },
+  "React Lifecycle ShouldUpdate": {
+    "prefix": "shouldUpdate",
+    "body": [
+      "public shouldComponentUpdate(nextProps: I${1:App}Props, nextState: I${1:App}State) {",
+      "\t${2:return false;}",
+      "}"
+    ]
+  },
+  "React Lifecycle BeforeUpdate": {
+    "prefix": "beforeUpdate",
+    "body": [
+      "public getSnapshotBeforeUpdate(prevProps: I${1:App}Props, prevState: I${1:App}State) {",
+      "\t${2}",
+      "}"
+    ]
+  },
+  "React Lifecycle DidUpdate": {
+    "prefix": "didUpdate",
+    "body": [
+      "public componentDidUpdate(prevProps: I${1:App}Props, prevState: I${1:App}State) {",
+      "\t${2}",
+      "}"
+    ]
+  },
+  "React Lifecycle WillUnmount": {
+    "prefix": "willUnmount",
+    "body": ["public componentWillUnmount() {", "\t${1}", "}"]
+  },
+  "React Lifecycle DidCatch": {
+    "prefix": "didCatch",
+    "body": [
+      "public componentDidCatch(error: Error | null, info: object) {",
+      "\t${1}",
+      "}"
+    ]
+  }
+}

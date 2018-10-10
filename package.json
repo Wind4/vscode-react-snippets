@@ -1,6 +1,6 @@
 {
   "name": "vscode-react-snippets",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "VSCode React snippets",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -40,6 +40,34 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/file-header.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/file-header.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/file-header.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/file-header.json"
       }
     ]
   }

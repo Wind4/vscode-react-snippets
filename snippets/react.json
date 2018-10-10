@@ -1,160 +1,136 @@
 {
-    "reactComponent": {
-        "prefix": "rc",
-        "body": [
-            "import React from 'react';",
-            "import PropTypes from 'prop-types';",
-            "",
-            "class ${1:MyComponent} extends React.Component {",
-            "\tstatic propTypes = {}",
-            "\tstatic defaultProps = {}",
-            "",
-            "\tconstructor(props) {",
-            "\t\tsuper(props);",
-            "",
-            "\t\tthis.state = {};",
-            "\t}",
-            "",
-            "\trender() {",
-            "\t\treturn (",
-            "\t\t\t${2:<div>MyComponent</div>}",
-            "\t\t);",
-            "\t}",
-            "}",
-            "",
-            "export default ${1:MyComponent};",
-            ""
-        ]
-    },
-    "reactPureComponent": {
-        "prefix": "rcpure",
-        "body": [
-            "import React from 'react';",
-            "import PropTypes from 'prop-types';",
-            "",
-            "class ${1:MyComponent} extends React.PureComponent {",
-            "\tstatic propTypes = {}",
-            "\tstatic defaultProps = {}",
-            "",
-            "\tconstructor(props) {",
-            "\t\tsuper(props);",
-            "",
-            "\t\tthis.state = {};",
-            "\t}",
-            "",
-            "\trender() {",
-            "\t\treturn (",
-            "\t\t\t${2:<div>MyComponent</div>}",
-            "\t\t);",
-            "\t}",
-            "}",
-            "",
-            "export default ${1:MyComponent};",
-            ""
-        ]
-    },
-    "reactStatelessFunctionalComponent": {
-        "prefix": "rcfunc",
-        "body": [
-            "import React from 'react';",
-            "import PropTypes from 'prop-types';",
-            "",
-            "function ${1:MyComponent}() {",
-            "\treturn (",
-            "\t\t${2:<div>MyComponent</div>}",
-            "\t);",
-            "}",
-            "",
-            "${1:MyComponent}.propTypes = {};",
-            "${1:MyComponent}.defaultProps = {};",
-            "",
-            "export default ${1:MyComponent};",
-            ""
-        ]
-    },
-    "reactConstructor": {
-        "prefix": "ctor",
-        "body": [
-            "constructor(props) {",
-            "\tsuper(props);",
-            "",
-            "\tthis.state = {",
-            "\t\t${1}",
-            "\t};",
-            "}"
-        ]
-    },
-    "reactLifecycleWillMount": {
-        "prefix": "cwm",
-        "body": [
-            "componentWillMount() {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleDidMount": {
-        "prefix": "cdm",
-        "body": [
-            "componentDidMount() {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleWillReceiveProps": {
-        "prefix": "cwrp",
-        "body": [
-            "componentWillReceiveProps(nextProps) {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleShouldUpdate": {
-        "prefix": "csu",
-        "body": [
-            "shouldComponentUpdate(nextProps, nextState) {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleWillUpdate": {
-        "prefix": "cwup",
-        "body": [
-            "componentWillUpdate(nextProps, nextState) {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleDidUpdate": {
-        "prefix": "cdup",
-        "body": [
-            "componentDidUpdate(prevProps, prevState) {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactLifecycleWillUnmount": {
-        "prefix": "cwum",
-        "body": [
-            "componentWillUnmount() {",
-            "\t${1}",
-            "}"
-        ]
-    },
-    "reactPropTypeClassname": {
-        "prefix": "ptclass",
-        "body": "className: PropTypes.string,${0}"
-    },
-    "reactPropTypeStyle": {
-        "prefix": "ptstyle",
-        "body": "style: PropTypes.object,${0}"
-    },
-    "reactPropTypeChildren": {
-        "prefix": "ptchild",
-        "body": [
-            "children: PropTypes.oneOfType([",
-            "\tPropTypes.arrayOf(PropTypes.node),",
-            "\tPropTypes.node,",
-            "]),${0}"
-        ]
-    }
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "class ${1:MyComponent} extends React.Component {",
+      "\tstatic propTypes = {}",
+      "\tstatic defaultProps = {}",
+      "",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t${2:<div>MyComponent</div>}",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:MyComponent};",
+      ""
+    ]
+  },
+  "React PureComponent": {
+    "prefix": "rcpure",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "class ${1:MyComponent} extends React.PureComponent {",
+      "\tstatic propTypes = {}",
+      "\tstatic defaultProps = {}",
+      "",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t${2:<div>MyComponent</div>}",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:MyComponent};",
+      ""
+    ]
+  },
+  "React StatelessFunctionalComponent": {
+    "prefix": "rcfunc",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "function ${1:MyComponent}() {",
+      "\treturn (",
+      "\t\t${2:<div>MyComponent</div>}",
+      "\t);",
+      "}",
+      "",
+      "${1:MyComponent}.propTypes = {};",
+      "${1:MyComponent}.defaultProps = {};",
+      "",
+      "export default ${1:MyComponent};",
+      ""
+    ]
+  },
+  "React Constructor": {
+    "prefix": "ctor",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props);",
+      "",
+      "\tthis.state = {",
+      "\t\t${1}",
+      "\t};",
+      "}"
+    ]
+  },
+  "React Lifecycle DidMount": {
+    "prefix": "didMount",
+    "body": ["componentDidMount() {", "\t${1}", "}"]
+  },
+  "React Lifecycle DerivedState": {
+    "prefix": "derivedState",
+    "body": ["static getDerivedStateFromProps(props, state) {", "\t${2}", "}"]
+  },
+  "React Lifecycle ShouldUpdate": {
+    "prefix": "shouldUpdate",
+    "body": [
+      "shouldComponentUpdate(nextProps, nextState) {",
+      "\t${2:return false;}",
+      "}"
+    ]
+  },
+  "React Lifecycle BeforeUpdate": {
+    "prefix": "beforeUpdate",
+    "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t${2}", "}"]
+  },
+  "React Lifecycle DidUpdate": {
+    "prefix": "didUpdate",
+    "body": ["componentDidUpdate(prevProps, prevState) {", "\t${2}", "}"]
+  },
+  "React Lifecycle WillUnmount": {
+    "prefix": "willUnmount",
+    "body": ["componentWillUnmount() {", "\t${1}", "}"]
+  },
+  "React Lifecycle DidCatch": {
+    "prefix": "didCatch",
+    "body": ["componentDidCatch(error, info) {", "\t${1}", "}"]
+  },
+  "React PropType Classname": {
+    "prefix": "ptclass",
+    "body": "className: PropTypes.string,${0}"
+  },
+  "React PropType Style": {
+    "prefix": "ptstyle",
+    "body": "style: PropTypes.object,${0}"
+  },
+  "React PropType Children": {
+    "prefix": "ptchild",
+    "body": [
+      "children: PropTypes.oneOfType([",
+      "\tPropTypes.arrayOf(PropTypes.node),",
+      "\tPropTypes.node,",
+      "]),${0}"
+    ]
+  }
 }

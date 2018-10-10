@@ -61,19 +61,19 @@
   },
   "defineFunction": {
     "prefix": "func",
-    "body": ["function ${1:name}(${2}) {", "\t${3}", "}"],
+    "body": ["function ${1:name}(${2}: ${3}) {", "\t${4}", "}"],
     "description": "Create a function"
   },
   "defineArrowFunction": {
     "prefix": "fn",
-    "body": "(${1}) => {${2}}${0}",
+    "body": "(${1}: ${2}) => {${3}}${0}",
     "description": "Create a arrow function"
   },
   "definePromise": {
     "prefix": "promise",
     "body": [
-      "new Promise((resolve, reject) => {",
-      "\t${1:resolve();}",
+      "new Promise<${1:void}>((resolve, reject) => {",
+      "\t${2:resolve();}",
       "})${0}"
     ],
     "description": "Create a promise segment"
