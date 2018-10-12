@@ -12,12 +12,12 @@
     "description": "MIT License"
   },
   "License_By-Health": {
-    "prefix": "license:by-health",
+    "prefix": "license:byhealth",
     "body": [
       "/**",
       " * BY-Health Front-end Team (https://www.by-health.com/)",
       " *",
-      " * Copyright © 2016-2018 By-Health Co Ltd. All rights reserved.",
+      " * Copyright © 2016-present By-Health Co Ltd. All rights reserved.",
       " */"
     ],
     "description": "By-Health License"

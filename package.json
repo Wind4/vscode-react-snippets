@@ -55,19 +55,19 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/file-header.json"
+        "path": "./snippets/license.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/file-header.json"
+        "path": "./snippets/license.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/file-header.json"
+        "path": "./snippets/license.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/file-header.json"
+        "path": "./snippets/license.json"
       }
     ]
   }
