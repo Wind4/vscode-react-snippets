@@ -2,7 +2,7 @@
   "License_MIT": {
     "prefix": "license:mit",
     "body": [
-      "/**",
+      "/*",
       " * Copyright (c) 2018 Wind4 <puxiaping@gmail.com>",
       " *",
       " * This source code is licensed under the MIT license found in the",
@@ -14,7 +14,7 @@
   "License_By-Health": {
     "prefix": "license:byhealth",
     "body": [
-      "/**",
+      "/*",
       " * BY-Health Front-end Team (https://www.by-health.com/)",
       " *",
       " * Copyright © 2016-present By-Health Co Ltd. All rights reserved.",
