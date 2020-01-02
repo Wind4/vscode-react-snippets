@@ -88,10 +88,18 @@
     "prefix": "didMount",
     "body": ["public componentDidMount() {", "\t${1}", "}"]
   },
-  "React Lifecycle DerivedState": {
-    "prefix": "derivedState",
+  "React Lifecycle DerivedState From Props": {
+    "prefix": "derivedProps",
     "body": [
       "public static getDerivedStateFromProps(props: I${1:App}Props, state: I${1:App}State) {",
+      "\t${2}",
+      "}"
+    ]
+  },
+  "React Lifecycle DerivedState From Error": {
+    "prefix": "derivedError",
+    "body": [
+      "public static getDerivedStateFromError(error: any) {",
       "\t${2}",
       "}"
     ]
@@ -127,7 +135,7 @@
   "React Lifecycle DidCatch": {
     "prefix": "didCatch",
     "body": [
-      "public componentDidCatch(error: Error | null, info: object) {",
+      "public componentDidCatch(error: Error | null, info: any) {",
       "\t${1}",
       "}"
     ]

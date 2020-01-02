@@ -88,9 +88,13 @@
     "prefix": "didMount",
     "body": ["componentDidMount() {", "\t${1}", "}"]
   },
-  "React Lifecycle DerivedState": {
+  "React Lifecycle DerivedState From Props": {
     "prefix": "derivedState",
     "body": ["static getDerivedStateFromProps(props, state) {", "\t${2}", "}"]
+  },
+  "React Lifecycle DerivedState From State": {
+    "prefix": "derivedState",
+    "body": ["static getDerivedStateFromError(error) {", "\t${2}", "}"]
   },
   "React Lifecycle ShouldUpdate": {
     "prefix": "shouldUpdate",
