@@ -91,7 +91,7 @@
   "React Lifecycle DerivedState From Props": {
     "prefix": "derivedProps",
     "body": [
-      "public static getDerivedStateFromProps(props: I${1:App}Props, state: I${1:App}State) {",
+      "public static getDerivedStateFromProps(props: I${1:App}Props, state: I${1:App}State): Partial<I${1:App}State> | null {",
       "\t${2}",
       "}"
     ]
