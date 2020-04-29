@@ -1,0 +1,31 @@
+{
+  "React useState": {
+    "prefix": "ustate",
+    "body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(${2});${0}",
+    "description": "React useState() hook"
+  },
+  "React useRef": {
+    "prefix": "uref",
+    "body": "const ${1:ref} = useRef(${2});${0}",
+    "description": "React useRef() hook"
+  },
+  "React useMemo": {
+    "prefix": "umem",
+    "body": [
+      "const ${1:memoizedValue} = useMemo(() => {",
+      "\treturn ${2}",
+      "}, [${3}]);${0}"
+    ],
+    "description": "React useMemo() hook"
+  },
+  "React useCallback": {
+    "prefix": "ucb",
+    "body": ["const ${1:callback} = useCallback(() => {", "\t${2}", "}, [${3}]);${0}"],
+    "description": "React useCallback() hook"
+  },
+  "React useEffect": {
+    "prefix": "uef",
+    "body": ["useEffect(() => {", "\t${1}", "}, [${2}]);${0}"],
+    "description": "React useEffect() hook"
+  }
+}

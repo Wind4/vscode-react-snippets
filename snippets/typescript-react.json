@@ -4,13 +4,13 @@
     "body": [
       "import React, { Component } from 'react';",
       "",
-      "interface I${1:App}Props {}",
-      "interface I${1:App}State {}",
+      "interface ${1:App}Props {}",
+      "interface ${1:App}State {}",
       "",
-      "class ${1:App} extends Component<I${1:App}Props, I${1:App}State> {",
+      "class ${1:App} extends Component<${1:App}Props, ${1:App}State> {",
       "\tpublic static defaultProps = {};",
       "",
-      "\tconstructor(props: I${1:App}Props) {",
+      "\tconstructor(props: ${1:App}Props) {",
       "\t\tsuper(props);",
       "",
       "\t\tthis.state = {};",
@@ -32,13 +32,13 @@
     "body": [
       "import React, { PureComponent } from 'react';",
       "",
-      "interface I${1:App}Props {}",
-      "interface I${1:App}State {}",
+      "interface ${1:App}Props {}",
+      "interface ${1:App}State {}",
       "",
-      "class ${1:App} extends PureComponent<I${1:App}Props, I${1:App}State> {",
+      "class ${1:App} extends PureComponent<${1:App}Props, ${1:App}State> {",
       "\tpublic static defaultProps = {};",
       "",
-      "\tconstructor(props: I${1:App}Props) {",
+      "\tconstructor(props: ${1:App}Props) {",
       "\t\tsuper(props);",
       "",
       "\t\tthis.state = {};",
@@ -55,15 +55,15 @@
       ""
     ]
   },
-  "React Stateless Functional Component": {
+  "React Functional Component": {
     "prefix": "rcfunc",
     "body": [
       "import React from 'react';",
       "",
-      "interface I${1:App}Props {}",
+      "interface ${1:App}Props {}",
       "",
-      "const ${1:App}: React.SFC<I${1:App}Props> = props => {",
-      "  return <div>{props.children}</div>;",
+      "const ${1:App}: React.FC<${1:App}Props> = ({ children }) => {",
+      "  return <div>{children}</div>;",
       "};",
       "",
       "${1:App}.defaultProps = {};",
@@ -75,7 +75,7 @@
   "React Constructor": {
     "prefix": "ctor",
     "body": [
-      "constructor(props: I${1:App}Props) {",
+      "constructor(props: ${1:App}Props) {",
       "\tsuper(props);",
       "",
       "\tthis.state = {",
@@ -91,7 +91,7 @@
   "React Lifecycle DerivedState From Props": {
     "prefix": "derivedProps",
     "body": [
-      "public static getDerivedStateFromProps(props: I${1:App}Props, state: I${1:App}State): Partial<I${1:App}State> | null {",
+      "public static getDerivedStateFromProps(props: ${1:App}Props, state: ${1:App}State): Partial<${1:App}State> | null {",
       "\t${2}",
       "}"
     ]
@@ -107,7 +107,7 @@
   "React Lifecycle ShouldUpdate": {
     "prefix": "shouldUpdate",
     "body": [
-      "public shouldComponentUpdate(nextProps: I${1:App}Props, nextState: I${1:App}State) {",
+      "public shouldComponentUpdate(nextProps: ${1:App}Props, nextState: ${1:App}State) {",
       "\t${2:return false;}",
       "}"
     ]
@@ -115,7 +115,7 @@
   "React Lifecycle BeforeUpdate": {
     "prefix": "beforeUpdate",
     "body": [
-      "public getSnapshotBeforeUpdate(prevProps: I${1:App}Props, prevState: I${1:App}State) {",
+      "public getSnapshotBeforeUpdate(prevProps: ${1:App}Props, prevState: ${1:App}State) {",
       "\t${2}",
       "}"
     ]
@@ -123,7 +123,7 @@
   "React Lifecycle DidUpdate": {
     "prefix": "didUpdate",
     "body": [
-      "public componentDidUpdate(prevProps: I${1:App}Props, prevState: I${1:App}State) {",
+      "public componentDidUpdate(prevProps: ${1:App}Props, prevState: ${1:App}State) {",
       "\t${2}",
       "}"
     ]

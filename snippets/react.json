@@ -53,7 +53,7 @@
       ""
     ]
   },
-  "React StatelessFunctionalComponent": {
+  "React Functional Component": {
     "prefix": "rcfunc",
     "body": [
       "import React from 'react';",
