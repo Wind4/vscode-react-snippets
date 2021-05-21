@@ -34,6 +34,10 @@
         "path": "./snippets/react.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/react-hooks.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/javascript.json"
       },
@@ -48,6 +52,10 @@
       {
         "language": "typescript",
         "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript-react-hooks.json"
       },
       {
         "language": "typescriptreact",
