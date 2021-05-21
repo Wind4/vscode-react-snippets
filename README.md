@@ -1,13 +1,14 @@
 # VSCode React Snippets
 
-## Installation
+## Install
 
-```bash
-git clone https://github.com/Wind4/vscode-react-snippets.git
+- Download VSIX from [GitHub Release](https://github.com/Wind4/vscode-react-snippets/releases)
+- Select Extensions (Ctrl + Shift + X)
+- Open “More Action” menu(ellipsis on the top) and click “Install from VSIX…”
+- Locate VSIX file and select.
+- Reload VSCode.
 
-# Linux
-ln -sf $(pwd)/vscode-react-snippets/ ~/.vscode/extensions/wind4.react-snippets-2.0.0
+## Publish
 
-# Windows
-mklink /J %USERPROFILE%\.vscode\extensions\wind4.react-snippets-2.0.0 vscode-react-snippets
-```
+- Run `npm run build`
+- Upload `./vscode-react-snippets-*.vsix` to Github release page
